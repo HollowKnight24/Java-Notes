@@ -2,5 +2,5 @@
 Java校招知识笔记
 
 ## Java
-[Java基础]
+[Java基础](https://github.com/HollowKnight24/Java-Notes/blob/master/Java/Java%E5%9F%BA%E7%A1%80)
 [Java集合]
