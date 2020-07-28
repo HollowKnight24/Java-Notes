@@ -47,4 +47,39 @@ hashcode：如果两个对象相等，则hashcode也相等，反之不一定。
 即hashcode也和equals一样，没重写也是通过地址来得到哈希码，重写了才通过值。  
 所以，在散列表中加入两个拥有相同值的不同对象时，不仅要重写equals，还要重写hashcode，才能避免重复元素的加入。  
 
+# final
+final修饰的变量初始化后不能修改，修饰的类不能被继承，修饰的方法不能重写。  
+
+# static
+静态方法或静态内部类只能访问所属类的静态变量和方法，方法中不能有this和super关键字。  
+静态语句块只在类初始化时执行一次。  
+非静态内部类依赖于外部类，即需要先实例化外部类后，才能用该实例去创建内部类。静态内部类则不用，能直接创建。  
+
+初始化顺序：  
+静态代码（静态变量，静态代码块）优先于非静态代码，最后才是构造方法。  
+有继承的情况下：父类静态代码>子类静态代码>父类非静态>父类构造方法>子类非静态>子类构造方法。  
+
+# 异常类
+Java的异常主要有两类，Exception和Error，都继承自Throwable类。  
+Error：程序无法处理的错误。如虚拟机运行错误（Virtual MachineError）和内存溢出（OutOfMemoryError）等。  
+Exception：程序能处理的异常。如RuntimeException，NullPointerException，ArrayIndexOutOfBoundsException。  
+
+异常处理：  
+try块：捕获异常，后面跟0个或多个catch块，没有carch则必须跟finally块。  
+carch块：处理捕获的异常。  
+finally块：最后肯定执行的块，如其他块有return语句，则会在return前被执行。如都有return，依旧会在return前执行，并且finally里的返回值会覆盖原始返回值。  
+
+# transient
+不想序列化的变量，用transient修饰。只能修饰变量，不能修饰方法和类。  
+
+# 浅拷贝与深拷贝
+浅拷贝：只拷贝引用对象，即两个引用指向同一对象。  
+深拷贝：创建新对象，并复制其内容。即两个相同内容的不同对象。  
+
+# 访问权限修饰符
+private、protected、public，不加访问修饰符即包级可见。  
+
+# 抽象类和接口
+抽象类用abstract声明，如果一个类包含抽象方法，则该类必须为抽象类。不能被实例化，只能被继承。  
+接口的字段和方法默认为public，且默认为static和final，不能为private和protected。  
 
