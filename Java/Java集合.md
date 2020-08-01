@@ -53,6 +53,14 @@ jdk1.8之后：
 
 （n-1）& hash等价于%的取余操作，但是&运算比%运算效率高。能转化为&运算的前提是length为2的n次方，所以HashMap的长度为2的幂次方。  
 
+# ConcurrentHashMap
+底层和HashMap一样。  
+jdk1.7：使用分段锁（Segment）实现线程安全，相当于在HashMap上在套上一层Segment数组，每个Segment维护一个HashEntry数组。  
+jdk1.8: 使用了 CAS 操作来支持更高的并发度，在 CAS 操作失败时使用内置锁 synchronized，相当于只在每个HashEntry的首节点加锁synchronized。  
+HashTable相当于直接给整个hashEntry数组加一个锁，会造成阻塞。  
+
+
+
 
 
 
