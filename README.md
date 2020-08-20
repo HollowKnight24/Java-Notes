@@ -14,5 +14,5 @@ Java校招知识笔记
 [操作系统](https://github.com/HollowKnight24/Java-Notes/blob/master/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.md)  
 
 ## 数据库
-[MySQL](https://github.com/HollowKnight24/Java-Notes/blob/master/MySQL.md)
-[Redis](https://github.com/HollowKnight24/Java-Notes/blob/master/Redis.md)
+[MySQL](https://github.com/HollowKnight24/Java-Notes/blob/master/MySQL.md)  
+[Redis](https://github.com/HollowKnight24/Java-Notes/blob/master/Redis.md)  
