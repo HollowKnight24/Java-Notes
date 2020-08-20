@@ -15,3 +15,4 @@ Java校招知识笔记
 
 ## 数据库
 [MySQL](https://github.com/HollowKnight24/Java-Notes/blob/master/MySQL.md)
+[Redis](https://github.com/HollowKnight24/Java-Notes/blob/master/Redis.md)
