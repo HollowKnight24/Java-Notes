@@ -16,3 +16,6 @@ Java校招知识笔记
 ## 数据库
 [MySQL](https://github.com/HollowKnight24/Java-Notes/blob/master/MySQL.md)  
 [Redis](https://github.com/HollowKnight24/Java-Notes/blob/master/Redis.md)  
+
+## 设计模式
+[设计模式](https://github.com/HollowKnight24/Java-Notes/blob/master/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md)  
