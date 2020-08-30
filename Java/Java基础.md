@@ -83,3 +83,5 @@ private、protected、public，不加访问修饰符即包级可见。
 抽象类用abstract声明，如果一个类包含抽象方法，则该类必须为抽象类。不能被实例化，只能被继承。  
 接口的字段和方法默认为public，且默认为static和final，不能为private和protected。  
 
+# 反射
+在运行时获取程序中类的信息，即jvm在运行时才动态加载类或调用和访问方法。  
