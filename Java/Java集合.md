@@ -48,6 +48,13 @@ table = newTable， threshold = newCapacity*loadfactor（0.75）。
 
 resize在并发情况下，因为头插法可能产生环，从而产生死循环。  
 
+排序：放入list里进行排序，List<Map.Entry<Integer, Integer>> l = new LinkedList<>(); Collections.sort(l, cmp);
+
+遍历：
+for(Map.Entry<,> e : map.entrySet()){e.getKey(), e.getValue()};
+
+map.entrySet(), map.keySet(), map.values()
+
 jdk1.8之后：  
 底层为数组加链表加红黑树，当链表长度大于8，链表转化为红黑树，尾插法。  
 
