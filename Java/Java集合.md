@@ -48,17 +48,17 @@ table = newTable， threshold = newCapacity*loadfactor（0.75）。
 
 resize在并发情况下，因为头插法可能产生环，从而产生死循环。  
 
+jdk1.8之后：  
+底层为数组加链表加红黑树，当链表长度大于8，链表转化为红黑树，尾插法。  
+
+（n-1）& hash等价于%的取余操作，但是&运算比%运算效率高。能转化为&运算的前提是length为2的n次方，所以HashMap的长度为2的幂次方。  
+
 排序：放入list里进行排序，List<Map.Entry<Integer, Integer>> l = new LinkedList<>(); Collections.sort(l, cmp);
 
 遍历：
 for(Map.Entry<,> e : map.entrySet()){e.getKey(), e.getValue()};
 
 map.entrySet(), map.keySet(), map.values()
-
-jdk1.8之后：  
-底层为数组加链表加红黑树，当链表长度大于8，链表转化为红黑树，尾插法。  
-
-（n-1）& hash等价于%的取余操作，但是&运算比%运算效率高。能转化为&运算的前提是length为2的n次方，所以HashMap的长度为2的幂次方。  
 
 # ConcurrentHashMap
 底层和HashMap一样。  
