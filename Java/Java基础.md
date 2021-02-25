@@ -86,3 +86,10 @@ private、protected、public，不加访问修饰符即包级可见。
 # 反射
 在运行时获取程序中类的信息，即jvm在运行时才动态加载类或调用和访问方法。  
 通过反射获取某个方法后，可以用invoke（）来调用方法。  
+
+# 代理类Proxy  
+loader: 代理对象的类加载器  
+interfaces: 代理对象实现的接口列表  
+h: 调用处理器  
+Proxy.newProxyInstance(ClassLoader loader, Class<?>[] interfaces, InvocationHandler h);
+
